@@ -1,0 +1,19 @@
+.home-content {
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.home-content h2 {
+  color: #333;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}

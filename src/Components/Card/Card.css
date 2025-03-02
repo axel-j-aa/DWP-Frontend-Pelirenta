@@ -1,0 +1,30 @@
+.ant-card {
+    width: 200px; /* Reduciendo el tamaño de la card */
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ant-card-cover img {
+    height: 180px; /* Haciendo la imagen más pequeña */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.ant-card-meta-title {
+    font-size: 14px; /* Reduciendo el tamaño del título */
+}
+
+.ant-card-meta-description {
+    font-size: 12px; /* Reduciendo el tamaño de la descripción */
+    color: #666;
+}
+
+.ant-modal-content {
+    text-align: center;
+}
+
+.ant-btn-primary {
+    width: 100%;
+}
