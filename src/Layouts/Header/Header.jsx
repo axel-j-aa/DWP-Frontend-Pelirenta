@@ -22,7 +22,7 @@ function CustomHeader() {
           <Link to="/contactanos">Contáctanos</Link> 
         </Menu.Item>
         <Menu.Item key="3" icon={<UserOutlined />}>
-          Perfil
+          <Link to="/perfil">Perfil</Link> 
         </Menu.Item>
       </Menu>
 

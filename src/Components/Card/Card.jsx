@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Card, Modal, Button } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
-import './Card.css'; // Para los estilos
+import './Card.css'; 
 
-import sampleImage from '../../Assets/solo_leveling.jpg'; // Asegúrate de tener una imagen en esta ruta
+import sampleImage from '../../Assets/solo_leveling.jpg'; 
 
 function CustomCard() {
   const [isModalOpen, setIsModalOpen] = useState(false);

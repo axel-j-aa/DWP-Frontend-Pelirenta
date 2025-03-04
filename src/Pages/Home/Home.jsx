@@ -1,8 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
-import Sidebar from '../../Components/Card/Card';  
-import CustomCard from '../../Layouts/Sidebar/Sidebar';
-import CustomHeader from '../../Layouts/Header/Header';
+import CustomCard from '../../Components/Card/Card';  
 import './Home.css';
 
 const { Content } = Layout;
@@ -10,9 +8,9 @@ const { Content } = Layout;
 function Home() {
   return (
     <Layout style={{ minHeight: '100vh' }} className="home-layout">
-      <CustomHeader />
+
       <Layout>
-        <Sidebar />
+
         <Layout style={{ marginLeft: 50, padding: 20 }}> 
           <Content style={{ background: '#fff', minHeight: 280 }}>
             <div className="home-content">
