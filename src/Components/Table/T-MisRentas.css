@@ -1,0 +1,9 @@
+.acciones {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .btn-accion {
+    border-radius: 5px;
+  }
+  

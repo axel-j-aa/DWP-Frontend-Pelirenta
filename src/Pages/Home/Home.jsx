@@ -14,7 +14,7 @@ function Home() {
         <Layout style={{ marginLeft: 50, padding: 20 }}> 
           <Content style={{ background: '#fff', minHeight: 280 }}>
             <div className="home-content">
-              <h2>Bienvenido a la página principal</h2>
+              <h2>Todas las Peliculas</h2>
               <div className="cards-container">
                 <CustomCard />
                 <CustomCard />

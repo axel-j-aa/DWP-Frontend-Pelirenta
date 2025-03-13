@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout, Menu, Input } from "antd";
-import { HomeOutlined, PhoneOutlined, UserOutlined, SearchOutlined } from "@ant-design/icons";
+import { HomeOutlined, PhoneOutlined, UserOutlined, SearchOutlined,GoldOutlined } from "@ant-design/icons";
 import { Link } from 'react-router-dom';
 import "./Header.css";
 import logo from "../../Assets/Fondo.jpg";
@@ -18,10 +18,13 @@ function CustomHeader() {
         <Menu.Item key="1" icon={<HomeOutlined />}>
           <Link to="/home">Home</Link>
         </Menu.Item>
-        <Menu.Item key="2" icon={<PhoneOutlined />}>
+        <Menu.Item key="2" icon={<GoldOutlined />}>
+          <Link to="/misrentas">Mis rentas</Link>
+        </Menu.Item>
+        <Menu.Item key="3" icon={<PhoneOutlined />}>
           <Link to="/contactanos">Contáctanos</Link> 
         </Menu.Item>
-        <Menu.Item key="3" icon={<UserOutlined />}>
+        <Menu.Item key="4" icon={<UserOutlined />}>
           <Link to="/perfil">Perfil</Link> 
         </Menu.Item>
       </Menu>

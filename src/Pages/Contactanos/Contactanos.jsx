@@ -1,13 +1,11 @@
-import React from 'react';
-import { Form, Input, Button } from 'antd';
-import { UserOutlined, MailOutlined, CommentOutlined } from '@ant-design/icons'; 
-import './Contactanos.css';
+import React from "react";
+import { Form, Input, Button } from "antd";
+import { UserOutlined, MailOutlined, CommentOutlined } from "@ant-design/icons";
+import "./Contactanos.css";
 
 function Contactanos() {
-  // Función para manejar el envío del formulario
   const handleFormSubmit = (values) => {
-    console.log('Valores enviados:', values);
-    // Aquí puedes agregar algún mensaje de éxito o enviar los datos a un backend.
+    console.log("Valores enviados:", values);
   };
 
   return (
@@ -28,33 +26,36 @@ function Contactanos() {
         >
           <Form.Item
             name="name"
-            rules={[{ required: true, message: 'Por favor ingresa tu nombre' }]}
+            rules={[{ required: true, message: "Por favor ingresa tu nombre" }]}
           >
             <Input prefix={<UserOutlined />} placeholder="Ingresa tu nombre" />
           </Form.Item>
 
           <Form.Item
             name="email"
-            rules={[{ required: true, message: 'Por favor ingresa tu correo' }]}
+            rules={[{ required: true, message: "Por favor ingresa tu correo" }]}
           >
             <Input prefix={<MailOutlined />} placeholder="Ingresa tu correo" />
           </Form.Item>
-
           <Form.Item
-            name="comment"
-            rules={[{ required: true, message: 'Por favor ingresa un comentario' }]}
-          >
-            <Input.TextArea
-              prefix={<CommentOutlined />}
-              placeholder="Escribe tu comentario"
-            />
-          </Form.Item>
+  name="comment"
+  rules={[
+    { required: true, message: "Por favor ingresa un comentario" },
+  ]}
+>
+  <Input.TextArea
+    prefix={<CommentOutlined />}
+    placeholder="Escribe tu comentario"
+  />
+</Form.Item>
 
-          <Form.Item>
-            <Button className="send-button" type="primary" htmlType="submit">
-              Enviar
-            </Button>
-          </Form.Item>
+
+<Form.Item className="button-container">
+  <Button className="send-button" color="cyan"  htmlType="submit">
+    Enviar
+  </Button>
+</Form.Item>
+
         </Form>
       </div>
     </div>
